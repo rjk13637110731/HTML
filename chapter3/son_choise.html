@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 我想要把ol里面的小li选出来改为pink */
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            /* 中国 山东 济南 蓝翔 */
+            color: red;
+        }
+
+        .nav li a {
+            /* 基础选择器 */
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的小li</li>
+        <li>我是ol的小li</li>
+        <li>我是ol的小li</li>
+        <li><a href="#" target="_blank">Hello World!</a></li>
+    </ol>
+
+    <ul>
+        <li>我是ul的小li</li>
+        <li>我是ul的小li</li>
+        <li>我是ul的小li</li>
+        <li><a href="#">不会发生变化</a></li>
+    </ul>
+
+    <ul class="nav">
+        <li>我是ul的小li</li>
+        <li>我是ul的小li</li>
+        <li>我是ul的小li</li>
+        <li><a href="#">不会发生变化</a></li>
+        <li><a href="#">不会发生变化</a></li>
+        <li><a href="#">不会发生变化</a></li>
+    </ul>
+</body>
+
+</html>
