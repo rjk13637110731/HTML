@@ -26,6 +26,8 @@
             height: 280px;
         }
 
+        /* 并集选择器可以集体声明相同的样式 */
+
         .prev {
             position: absolute;
             left: 0;
@@ -44,6 +46,25 @@
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
         }
+
+        .next {
+            position: absolute;
+            right: 0;
+
+            /* 绝对定位的盒子垂直居中 */
+            top: 50%;
+            margin-top: -15px;
+            /* 加了绝对定位的盒子可以直接设置高度和宽度 */
+            width: 20px;
+            height: 30px;
+            background-color: rgb(0, 0, 0, .3);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
     </style>
 </head>
 
@@ -52,6 +73,8 @@
         <img src="../images/tb.jpg" alt="">
         <!-- 左侧按钮 -->
         <a href="#" class="prev">&lt;</a>
+        <!-- 右侧按钮 -->
+        <a href="#" class="next">&gt;</a>
     </div>
 </body>
 
