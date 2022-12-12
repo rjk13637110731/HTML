@@ -27,10 +27,9 @@
         }
 
         /* 并集选择器可以集体声明相同的样式 */
-
-        .prev {
+        .prev,
+        .next {
             position: absolute;
-            left: 0;
 
             /* 绝对定位的盒子垂直居中 */
             top: 50%;
@@ -43,25 +42,17 @@
             line-height: 30px;
             color: #fff;
             text-decoration: none;
+        }
+
+        .prev {
+            left: 0;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
         }
 
         .next {
-            position: absolute;
+            /* 如果一个盒子既有left属性，又有right属性，则默认会执行left属性，同理top、bottom，则会默认执行top */
             right: 0;
-
-            /* 绝对定位的盒子垂直居中 */
-            top: 50%;
-            margin-top: -15px;
-            /* 加了绝对定位的盒子可以直接设置高度和宽度 */
-            width: 20px;
-            height: 30px;
-            background-color: rgb(0, 0, 0, .3);
-            text-align: center;
-            line-height: 30px;
-            color: #fff;
-            text-decoration: none;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
         }
