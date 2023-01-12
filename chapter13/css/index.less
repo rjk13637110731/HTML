@@ -2,7 +2,6 @@ body {
     min-width: 320px;
     max-width: 750px;
     margin: 0 auto;
-    height: 1200px;
     background-color: #f2f4f7;
 }
 
@@ -162,5 +161,96 @@ a {
         transform: scale(1);
         z-index: 999;
         opacity: 1;
+    }
+}
+
+.study_con {
+    padding-bottom: 3.7333rem;
+}
+
+// 学习模块的轮播图
+.study {
+    overflow: hidden;
+
+    .study_fo {
+        padding: .2667rem;
+    }
+
+    .swiper-slide {
+        // text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 7.7333rem;
+        height: 9.0667rem;
+        background-color: #fff;
+        border-radius: .2667rem;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+
+        /* Center slide text vertically */
+        // display: -webkit-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        // -webkit-box-pack: center;
+        // -ms-flex-pack: center;
+        // -webkit-justify-content: center;
+        // justify-content: center;
+        // -webkit-box-align: center;
+        // -ms-flex-align: center;
+        // -webkit-align-items: center;
+        // align-items: center;
+
+        h5 {
+            font-size: .6933rem;
+            margin: .5333rem 0;
+            font-weight: 400;
+            padding: 0 .2667rem;
+        }
+
+        p {
+            font-size: .6933rem;
+            color: #ff4400;
+            padding: 0 .2667rem;
+        }
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// 底部模块
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 2.9333rem;
+    width: 100%;
+    z-index: 9999999;
+    display: flex;
+    padding: .5333rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+
+    .item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 1.04rem;
+            height: 1.0933rem;
+        }
+
+        p {
+            font-size: .5867rem;
+            color: #666;
+            margin-top: .2667rem;
+        }
     }
 }
